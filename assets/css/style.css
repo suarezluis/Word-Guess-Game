@@ -140,3 +140,14 @@ a{text-decoration: none}
     font-size: 40px;
 }
 
+.guessingBlock{
+    float:right;
+    border:solid black 3px;
+    padding: 20px;
+    width: 40%
+}
+#guess{
+    
+    letter-spacing: 1em;
+}
+

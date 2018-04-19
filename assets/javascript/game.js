@@ -8,10 +8,17 @@ var won =0;
 var lost = 0;
 var games = 0;
 
+// Log initial stats
 logStats();
+
+document.getElementById("guess").innerHTML = (" " + guessedWord); 
+
+// listen for key up and send to function in lowercase
 document.onkeyup = function(event) {
   letter = event.key.toLowerCase();
   
+  
+
   // If letter is in word or list, do nothing, else update tries left
   if (isInWord(letter) || isInGuessedList(letter)) {
   } else {
@@ -51,8 +58,26 @@ document.onkeyup = function(event) {
     games += 1;
   }
 
+  
+
   // Log stats and variable to the console
   logStats();
+
+  // Update HTML content
+  document.getElementById("won").innerHTML = ("" + won);  
+  document.getElementById("lost").innerHTML = ("" + lost);  
+  document.getElementById("games").innerHTML = ("" + games);
+  document.getElementById("remaining").innerHTML = ("" + tries);  
+  document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");  
+  document.getElementById("guess").innerHTML = (" " + guessedWord); 
+  if(tries === 7){ document.getElementById("picture").src = "assets/images/7.png";}
+  if(tries === 6){ document.getElementById("picture").src = "assets/images/6.png";}
+  if(tries === 5){ document.getElementById("picture").src = "assets/images/5.png";}
+  if(tries === 4){ document.getElementById("picture").src = "assets/images/4.png";}
+  if(tries === 3){ document.getElementById("picture").src = "assets/images/3.png";}
+  if(tries === 2){ document.getElementById("picture").src = "assets/images/2.png";}
+  if(tries === 1){ document.getElementById("picture").src = "assets/images/1.png";}
+  if(tries === 0){ document.getElementById("picture").src = "assets/images/0.png";}
 };
 
 // Pick a random word from wordList
