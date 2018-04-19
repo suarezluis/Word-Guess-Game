@@ -48,7 +48,7 @@ document.onkeyup = function(event) {
   }
 
   // If tries left = 0, update lost and games then start new game
-  if (tries === 0){
+  if (tries === -1){
     word = pickWord();
     guessedWord = generateSpaces(word);
     letter = "";
