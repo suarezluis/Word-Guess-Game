@@ -1,0 +1,141 @@
+body {
+  background-image: url("../images/wood.jpg");
+}
+section {
+  margin: 2% auto;
+}
+
+.book {
+  background-color: black;
+  width: 50%;
+
+  margin: 0 auto;
+  border-radius: 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.pattern {
+  margin-left: 5%;
+  height: 900px;
+  width: 95%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: black;
+  background-image: url("../images/book.png");
+  background-position: center;
+  background-size: 250px;
+}
+
+.label {
+  position: unset;
+  margin: 10% auto;
+  text-align: center;
+  background-color: white;
+  width: 60%;
+  border: 10px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 0 7px white;
+}
+
+
+
+h1 {
+  font-size: 3em;
+}
+
+
+
+h2{
+    font-size: 2em;
+    padding: 0 5%;
+}
+
+h3{
+    
+    font-size: 150%;
+    padding: 0 5%;
+    padding-top: 0.5em;
+}
+    
+
+p{
+    padding-top: 0.5em;
+    font-size: 150%;
+}
+
+
+
+.underline {
+  margin: 0 auto;
+  width: 70%;
+  border-bottom: solid 2px black;
+}
+
+.left{
+    text-align: left;
+    padding-left: 10%;
+}
+
+.right{
+    text-align: right;
+    padding-right: 10%;
+}
+
+.bold{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+
+
+.button{  
+    padding: 1%;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: white;
+    
+    background-color: black;
+    
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+a{text-decoration: none}
+
+.button:hover{
+    
+    background-color: grey;
+    color:black;
+}
+
+.desk{
+    
+    
+}
+.paper{
+    margin: 2% auto;
+    background-image: url("../images/bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+
+.tittle{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.panel{
+    margin-left: 7%;
+    width: 20%;
+    
+    
+}
+
+.panel>h4{
+    margin-top: 10px;
+    font-size: 40px;
+}
