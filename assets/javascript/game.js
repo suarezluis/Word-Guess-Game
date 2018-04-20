@@ -65,6 +65,9 @@ document.onkeyup = function(event) {
   logStats();
 
   // Update HTML content
+
+  document.getElementById("won").focus()
+
   document.getElementById("won").innerHTML = ("" + won);  
   document.getElementById("lost").innerHTML = ("" + lost);  
   document.getElementById("games").innerHTML = ("" + games);

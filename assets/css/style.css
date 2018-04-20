@@ -154,7 +154,7 @@ a{text-decoration: none}
 }
 
 #guess{
-    
+    font-family: monospace;
     color: tomato;
     letter-spacing: 10px;
 }
@@ -164,4 +164,8 @@ a{text-decoration: none}
     margin: auto;
     
     
+}
+
+#won, #lost, #games, #remaining{
+    color: tomato;
 }
