@@ -12,6 +12,7 @@ var games = 0;
 logStats();
 
 document.getElementById("guess").innerHTML = (" " + guessedWord); 
+document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");
 
 // listen for key up and send to function in lowercase
 document.onkeyup = function(event) {
@@ -48,7 +49,7 @@ document.onkeyup = function(event) {
   }
 
   // If tries left = 0, update lost and games then start new game
-  if (tries === -1){
+  if (tries === 0){
     word = pickWord();
     guessedWord = generateSpaces(word);
     letter = "";
