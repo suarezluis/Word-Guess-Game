@@ -2,6 +2,9 @@ body {
   background-image: url("../images/wood.jpg");
   font-family: 'Patrick Hand', cursive;
 }
+audio{
+    visibility: hidden;
+}
 section {
   margin: 2% auto;
 }
