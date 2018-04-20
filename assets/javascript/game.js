@@ -17,7 +17,7 @@ document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");
 // listen for key up and send to function in lowercase
 
 document.onkeyup = function(event) {
-  document.getElementById("keyboard").click().focus();
+  
   letter = event.key.toLowerCase();
   
   
