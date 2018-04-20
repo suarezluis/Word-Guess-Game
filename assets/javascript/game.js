@@ -15,6 +15,7 @@ document.getElementById("guess").innerHTML = (" " + guessedWord);
 document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");
 
 // listen for key up and send to function in lowercase
+document.getElementById("keyboard").click().focus();
 document.onkeyup = function(event) {
   letter = event.key.toLowerCase();
   
@@ -65,9 +66,6 @@ document.onkeyup = function(event) {
   logStats();
 
   // Update HTML content
-
-  
-
   document.getElementById("won").innerHTML = ("" + won);  
   document.getElementById("lost").innerHTML = ("" + lost);  
   document.getElementById("games").innerHTML = ("" + games);
