@@ -8,16 +8,23 @@ var won =0;
 var lost = 0;
 var games = 0;
 
+function captionShowKb() { 
+  document.title = savedTitle + csAddStr + "Show";
+  csShowCount = csShowCount + 1;
+  setTimeout( "captionKbClose();", 1000); 
+}
+
+
+
 // Log initial stats
 logStats();
-
+captionShowKb();
 document.getElementById("guess").innerHTML = (" " + guessedWord); 
 document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");
 
 // listen for key up and send to function in lowercase
 
 document.onkeyup = function(event) {
-  
   letter = event.key.toLowerCase();
   
   
