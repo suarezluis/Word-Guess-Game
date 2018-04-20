@@ -66,7 +66,7 @@ document.onkeyup = function(event) {
 
   // Update HTML content
 
-  document.getElementById("won").focus()
+  document.getElementById("keyboard").focus()
 
   document.getElementById("won").innerHTML = ("" + won);  
   document.getElementById("lost").innerHTML = ("" + lost);  
