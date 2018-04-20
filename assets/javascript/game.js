@@ -106,6 +106,14 @@ function logStats() {
   console.log("Games won: " + won);
   console.log("Games lost: " + lost);
   console.log("Games total: " + games);
+  console.log(`%c ~~~~~~~~~~~~~~~~~~~~~~~~~
+| Did you lose something? |
+ ~~~~~~~~~~~~~~~~~~~~~~~~~
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     || Made by Luis Suarez.`, "font-family:monospace");
 }
 
 // Check if letter is in word
