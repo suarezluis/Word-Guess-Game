@@ -18,7 +18,7 @@ function captionShowKb() {
 
 // Log initial stats
 logStats();
-captionShowKb();
+
 document.getElementById("guess").innerHTML = (" " + guessedWord); 
 document.getElementById("list").innerHTML = ("Pressed: " + guessedList + " ");
 
