@@ -15,7 +15,8 @@ var lost = 0;
 var games = 0;
 
 document.getElementById("open").addEventListener("click", function(e){ 
-this.focus(); });
+this.focus();
+this.click(); });
 
 // Log initial stats
 logStats();
