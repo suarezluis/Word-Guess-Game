@@ -14,8 +14,8 @@ var won =0;
 var lost = 0;
 var games = 0;
 
-document.getElementById("open").addEventListener("click", function(e){ alert("Please use your keyboard to type your guess. :)");
-e.focus(); });
+document.getElementById("open").addEventListener("click", function(e){ alert("Please use the keyboard to type your guess. :)");
+this.focus(); });
 
 // Log initial stats
 logStats();
