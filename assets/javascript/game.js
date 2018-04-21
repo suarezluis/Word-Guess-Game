@@ -1,4 +1,10 @@
-var wordList = ["developer", "website", "computer", "keyboard", "monitor"];
+var wordList = [
+  "developer", 
+  "website", 
+  "computer", 
+  "keyboard", 
+  "monitor",
+  "mouse"];
 var word = pickWord();
 var guessedWord = generateSpaces(word);
 var letter = "";
@@ -50,6 +56,7 @@ document.onkeyup = function(event) {
 
   // If tries left = 0, update lost and games then start new game
   if (tries === 0){
+    alert("You lost, the word was ''"+ word.toUpperCase() +"'' keep trying..");
     word = pickWord();
     guessedWord = generateSpaces(word);
     letter = "";
