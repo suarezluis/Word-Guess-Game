@@ -14,6 +14,8 @@ var won =0;
 var lost = 0;
 var games = 0;
 
+document.getElementById("open").focus();
+
 // Log initial stats
 logStats();
 
